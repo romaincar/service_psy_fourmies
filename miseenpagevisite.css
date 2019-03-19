@@ -1,0 +1,10 @@
+body{
+    background-image: url("fond.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-inner{height: 700px;
+    margin-top: 3vw;
+
+}
