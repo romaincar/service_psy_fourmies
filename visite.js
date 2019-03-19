@@ -1,4 +1,5 @@
-visite=[
+
+visite = [
     {
         principal: "image_visite/01.JPG",
         titre: "Unité pour Anxio-Dépressifs",
@@ -200,52 +201,21 @@ visite=[
     }
 
 ];
-var i =0;
-console.log(visite[i].principal);
 
+console.log(visite.length);
+let i = 0;
 
-for ( i = 0 ; i < visite.length -1; i++){
+while ( i < visite.length ){
+    var test = "<div class='item active'><img src='"+ visite[i].principal +"' alt='Ateliers du verre' style='width:100%;'><div class='carousel-caption'><h3>"+ visite[i].titre +"</h3><p>"+ visite[i].commentaire +"</p></div></div>";
+    var test2 = "<div class='item'><img src='" + visite[i].principal + "' alt='Ateliers du verre' style='width:100%;'><div class='carousel-caption'><h3>"+ visite[i].titre +"</h3><p>"+ visite[i].commentaire +"</p></div></div>";
 
-    if (i = 0){
-        document.write =
-        '<div class="item active">' +
-        '<img src="'+ visite[i].principal +'" alt="Chicago" style="width:100%;">' +
-        '<div class="carousel-caption">' +
-        '<h3>' + visite[i].titre + '</h3>' +
-        '<p>' + visite[i].commentaire + '</p>' +
-        '</div>' +
-        '</div>';
+    if (i === 0){
+        console.log(i);
+        document.getElementById('photo').innerHTML += test;
     }
     else {
-        document.write =
-        '<div class="item">' +
-        '<img src="'+ visite[i].principal +'" alt="Chicago" style="width:100%;">' +
-        '<div class="carousel-caption">' +
-        '<h3>' + visite[i].titre + '</h3>' +
-        '<p>' + visite[i].commentaire + '</p>' +
-        '</div>' +
-        '</div>';
+        console.log(i);
+        document.getElementById('photo').innerHTML += test2;
     }
-
+    i++;
 }
-
-
-/*var div1 = document.createElement('div');
-div1.class = "item";
-var img = document.createElement('img');
-img.source = visite[i].principal;
-img.style = "width";
-var div2 = document.createElement('div');
-div2.class = "carousel-caption";
-var h3 = document.createElement('h3');
-
-var p = document.createElement( 'p');
-
-div1.appendChild('photo');
-img.appendChild('photo');
-div2.appendChild('photo');
-*/
-
-
-h3.innerHTML = visite[i].titre;
-p.innerHTML = visite[i].commentaire;

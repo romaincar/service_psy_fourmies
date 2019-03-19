@@ -4,7 +4,21 @@ body{
     background-size: cover;
 }
 
-.carousel-inner{height: 700px;
-    margin-top: 3vw;
+#titre {
+    text-align: center;
+    color: white;
+}
 
+.carousel-inner{
+    height: 800px;
+    margin-top: 1em;
+    border-radius: 10px;
+}
+
+.carousel-caption p {
+    font-size: 25px;
+}
+
+.carousel-caption h3 {
+    font-size: 40px;
 }
